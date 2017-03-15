@@ -1,0 +1,29 @@
+{
+  "name": "nemacolininc",
+  "version": "1.0.0",
+  "description": "website for Nemacolin, Inc.",
+  "engines": {
+    "node": "7.2.1"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/McNeil-Squared/Nem_Inc.git"
+  },
+  "author": "Smellydog Coding",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/McNeil-Squared/Nem_Inc/issues"
+  },
+  "homepage": "https://github.com/McNeil-Squared/Nem_Inc#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
+    "nodemailer": "^2.7.2",
+    "pug": "^2.0.0-beta11"
+  }
+}
