@@ -27,16 +27,12 @@ app.get('/', function(req,res) {
   res.render('index', {title: 'Nemacolin,Inc.'});
 });
 
-app.get('/about', function(req,res) {
-  res.render('about', {title: 'About'});
+app.get('/customer', function(req,res) {
+  res.render('customer', {title: 'Customer Info'});
 });
 
 app.get('/park', function(req,res) {
   res.render('park', {title: 'Park'});
-});
-
-app.get('/customer', function(req,res) {
-  res.render('customer', {title: 'Customer Info'});
 });
 
 app.get('/faq', function(req,res) {
@@ -46,10 +42,6 @@ app.get('/faq', function(req,res) {
 app.get('/contact', function(req,res) {
   res.render('contact', {title: 'Contact'});
 });
-
-/*app.get('/test', function(req,res) {
-  res.render('test', {gallery: pics.gallery});
-});*/
 
 app.post('/send', function(req,res) {
   console.log(req.body.name);
