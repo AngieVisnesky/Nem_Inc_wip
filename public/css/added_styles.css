@@ -1,0 +1,47 @@
+/******ADDITIONAL STYLES *******/
+#maincontent{ overflow: hidden; height: 100%;}
+
+#maincontent-left {
+    float: left;
+    width: 570px;
+    padding: 20px;
+    background: #ffffff;
+    text-align: justify;
+}
+
+#maincontent-right{
+    float: right;
+    width: 270px;
+    padding: 20px;
+    background: #ffffff;
+}  
+.newsitem{
+    overflow: hidden;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.newstitle-holder{
+    display: block; 
+    overflow: hidden; 
+    height: 100%;
+}
+
+.newstitle{
+    display: block;
+    float: left;
+    width: 190px; 
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.newstitle a{color: #333;}
+
+.newsdate{
+    display: block;
+    float: right;
+    width: 75px;
+    padding-bottom: 5px;
+    font-size: 11px;
+    text-align: right;
+}

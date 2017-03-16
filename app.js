@@ -24,11 +24,27 @@ app.use(express.static(__dirname + '/views'));
  app.set('views', __dirname + '/views');
 
 app.get('/', function(req,res) {
-  res.render('index');
+  res.render('index', {title: 'Nemacolin,Inc.'});
 });
 
-app.get('/portfolio', function(req,res) {
-  res.render('portfolio', {title: 'Our Work', gallery: pics.gallery});
+app.get('/about', function(req,res) {
+  res.render('about', {title: 'About'});
+});
+
+app.get('/park', function(req,res) {
+  res.render('park', {title: 'Park'});
+});
+
+app.get('/customer', function(req,res) {
+  res.render('customer', {title: 'Customer Info'});
+});
+
+app.get('/faq', function(req,res) {
+  res.render('faq', {title: 'FAQ'});
+});
+
+app.get('/contact', function(req,res) {
+  res.render('contact', {title: 'Contact'});
 });
 
 /*app.get('/test', function(req,res) {
