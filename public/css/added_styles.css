@@ -1,4 +1,4 @@
-/******ADDITIONAL STYLES *******/
+/******HOME PAGE TWO COLUMN SPREAD *******/
 #maincontent{ overflow: hidden; height: 100%;}
 
 #maincontent-left {
@@ -45,3 +45,67 @@
     font-size: 11px;
     text-align: right;
 }
+
+/******CONTACT PAGE *******/
+
+#contact {
+    margin:0;
+    padding: 15px 0px 10px 30px;
+    font-weight: bold;
+}
+
+textarea {
+    height: 126px;
+    width: 80%;
+}
+input, textarea {   
+    border-radius: 8px;
+}
+
+#input-name, #input-email  {
+    width: 39%;
+}
+
+#input-subject, #btn-submit  {
+    width: 80%;
+}
+
+.contactMargin {
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.iconMargin {
+    margin-right: 25px;
+}
+
+#topMargin {
+    margin-top: 30px;
+}
+
+#input-email{
+    margin-left: 2%;
+}
+
+#btn-submit {
+    font-weight: bold;
+    height: 50px;
+}
+
+#visual {
+    padding-right: 8px;
+}
+
+#formSubmission {
+    width: 77%;
+    border: 3px solid rgb(132, 189, 0);
+    margin-left: 1.8em;
+    margin-bottom: 1.0em;
+    padding: 0.5em;
+    text-align: center;
+    font-weight: 600;
+    color: #000;
+    border-radius: 5px;
+    font-size: 1.25em;
+}
+
