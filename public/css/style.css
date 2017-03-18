@@ -1750,7 +1750,7 @@ body {
   /* line 9, sass/layout/_header.scss */
   .site-header .container {
     *zoom: 1;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+    border-bottom: 2px solid red; }
     /* line 4, sass/libs/_mixins.scss */
     .site-header .container:after {
       content: " ";

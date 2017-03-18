@@ -110,3 +110,6 @@ input, textarea {
     font-size: 1.25em;
 }
 
+.site-footer{
+    border-top: 2px solid red;
+}
