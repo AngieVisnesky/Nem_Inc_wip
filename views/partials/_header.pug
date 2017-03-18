@@ -6,15 +6,39 @@ header.site-header
         nav.main-navigation
             button.toggle-menu(type="button") 
                 i.fa.fa-bars
-            ul.menu
-                li.menu-item
-                    a(href="/index") Home
-                li.menu-item
-                    a(href="/customer") Customer Info
-                li.menu-item
-                    a(href="/park") Park 
-                li.menu-item
-                    a(href="/faq") FAQ    
-                li.menu-item
-                    a(href="/contact") Contact
+            ul.menu               
+                if title === 'Nemacolin, Inc.'
+                    li.menu-item.current-menu-item
+                        a(href="/") Home
+                else
+                    li.menu-item
+                        a(href="/") Home
+                        
+                if title === 'Customer Info'        
+                    li.menu-item.current-menu-item
+                        a(href="/customer") Customer Info
+                else
+                    li.menu-item
+                        a(href="/customer") Customer Info
+                        
+                if title === 'Park'       
+                    li.menu-item.current-menu-item
+                        a(href="/park") Park 
+                else
+                    li.menu-item
+                        a(href="/park") Park
+                        
+                if title === 'FAQ'       
+                    li.menu-item.current-menu-item
+                        a(href="/faq") FAQ
+                else
+                    li.menu-item
+                        a(href="/faq") FAQ
+                        
+                if title === 'Contact'        
+                    li.menu-item.current-menu-item
+                        a(href="/contact") Contact
+                else
+                    li.menu-item
+                        a(href="/contact") Contact
         div.mobile-menu

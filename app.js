@@ -24,7 +24,7 @@ app.use(express.static(__dirname + '/views'));
  app.set('views', __dirname + '/views');
 
 app.get('/', function(req,res) {
-  res.render('index', {title: 'Nemacolin,Inc.'});
+  res.render('index', {title: 'Nemacolin, Inc.'});
 });
 
 app.get('/customer', function(req,res) {

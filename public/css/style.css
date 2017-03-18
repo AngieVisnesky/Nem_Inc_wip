@@ -1835,7 +1835,7 @@ body {
         opacity: 1; }
       /* line 80, sass/layout/_header.scss */
       .main-navigation .menu .menu-item:hover a, .main-navigation .menu .menu-item.current-menu-item a {
-        color: #fd5927; }
+        color: red; }
     /* line 84, sass/layout/_header.scss */
     .main-navigation .menu a {
       display: block;
@@ -1883,7 +1883,7 @@ body {
         color: #fd5927; }
     /* line 126, sass/layout/_header.scss */
     .mobile-menu .menu .current-menu-item a {
-      color: #fd5927; }
+      color: red; }
 
 /* 
  * 	Core Owl Carousel CSS File
