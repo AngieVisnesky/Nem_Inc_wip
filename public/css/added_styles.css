@@ -1,3 +1,13 @@
+body {
+    padding-top: 130px;
+}
+
+.navbar {
+    background-color: #555;
+    min-height: 130px;
+    border-bottom: 2px solid red;
+}
+
 /******HOME PAGE TWO COLUMN SPREAD *******/
 #maincontent{ overflow: hidden; height: 100%;}
 
@@ -113,4 +123,6 @@ input, textarea {
 .site-footer{
     border-top: 2px solid red;
     margin-top: 30px;
+    padding-bottom: 20px;
+    padding-top: 30px;
 }
