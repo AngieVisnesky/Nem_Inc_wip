@@ -55,7 +55,7 @@ app.post('/send', function(req,res) {
   const options = {
     from: 'SmellydogCodingNoReply@gmail.com',
     to: req.body.email,
-    cc: 'angie.visnesky@gmail.com',
+    cc: 'info@nemacolininc.com',
     subject: req.body.subject,
     text: 'This is a message from ' + req.body.name + ': ' + req.body.message
   }
