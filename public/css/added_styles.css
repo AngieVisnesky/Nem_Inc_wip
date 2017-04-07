@@ -1,11 +1,28 @@
 body {
     padding-top: 130px;
+    background-color: lightgray;
+    font-family: 'Montserrat', sans-serif;
 }
+
+/*****NAVBAR*****/
 
 .navbar {
     background-color: #555;
     min-height: 130px;
-    border-bottom: 2px solid red;
+    border-bottom: 3px solid red;
+
+}
+
+.menu-item {
+    font-size: 1.5em;
+}
+
+.main-navigation .menu .menu-item:hover a, .main-navigation .menu .menu-item.current-menu-item a {
+    color: red;
+}
+
+.menu-item a{
+    transition: .3s ease;
 }
 
 /******HOME PAGE TWO COLUMN SPREAD *******/
