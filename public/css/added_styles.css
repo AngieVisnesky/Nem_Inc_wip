@@ -10,20 +10,35 @@ body {
     background-color: #555;
     min-height: 130px;
     border-bottom: 3px solid red;
-
 }
 
 .menu-item {
     font-size: 1.5em;
 }
 
-.main-navigation .menu .menu-item:hover a, .main-navigation .menu .menu-item.current-menu-item a {
+.main-navigation .menu .menu-item:hover a,
+.main-navigation .menu .menu-item.current-menu-item a {
     color: red;
+}
+
+.navbar-nav  li  a {
+    color: #9d9d9d;
 }
 
 .menu-item a{
     transition: .3s ease;
 }
+
+.site-description {
+    display: block;
+    margin: 0;
+    color: #9d9d9d;
+}
+
+.navbar-brand {
+    height: 100%
+}
+
 
 /******HOME PAGE TWO COLUMN SPREAD *******/
 #maincontent{ overflow: hidden; height: 100%;}
@@ -142,4 +157,12 @@ input, textarea {
     margin-top: 30px;
     padding-bottom: 20px;
     padding-top: 30px;
+}
+
+/*******MEDIA QUERIES********/
+@media (min-width: 768px) {
+    .nav li a {
+        display: inline-block;
+        float: left;
+    }
 }
