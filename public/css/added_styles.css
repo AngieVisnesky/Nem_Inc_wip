@@ -1,12 +1,44 @@
 body {
-    padding-top: 130px;
+    padding-top: 350px;
+    background-color: lightgray;
+    font-family: 'Montserrat', sans-serif;
 }
+
+/*****NAVBAR*****/
 
 .navbar {
     background-color: #555;
     min-height: 130px;
-    border-bottom: 2px solid red;
+    border-bottom: 3px solid red;
 }
+
+.menu-item {
+    font-size: 1.5em;
+}
+
+.main-navigation .menu .menu-item:hover a,
+.main-navigation .menu .menu-item.current-menu-item a {
+    color: red;
+}
+
+.navbar-nav  li  a {
+    color: #9d9d9d;
+}
+
+.menu-item a{
+    transition: .3s ease;
+}
+
+.site-description {
+    display: block;
+    margin: 0;
+    color: #9d9d9d;
+}
+
+.navbar-brand {
+    height: 100%
+}
+
 
 /******HOME PAGE TWO COLUMN SPREAD *******/
 #maincontent{ overflow: hidden; height: 100%;}
@@ -58,6 +90,10 @@ body {
 
 /******CONTACT PAGE *******/
 
+.headline-padding {
+    padding-top: 50px;
+}
+
 #contact {
     margin:0;
     padding: 15px 0px 10px 30px;
@@ -65,7 +101,7 @@ body {
 }
 
 textarea {
-    height: 126px;
+    height: 150px;
     width: 80%;
 }
 input, textarea {   
@@ -81,6 +117,7 @@ input, textarea {
 }
 
 .contactMargin {
+    margin-top: 15px;
     margin-bottom: 10px;
     margin-left: 30px;
 }
@@ -101,6 +138,8 @@ input, textarea {
     font-weight: bold;
     height: 50px;
     border: 2px solid red;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 #visual {
@@ -121,8 +160,19 @@ input, textarea {
 }
 
 .site-footer{
-    border-top: 2px solid red;
+    border-top: 3px solid red;
     margin-top: 30px;
     padding-bottom: 20px;
     padding-top: 30px;
+}
+
+/*******MEDIA QUERIES********/
+@media (min-width: 768px) {
+    body {
+        padding-top: 130px;
+    }
+    .nav li a {
+        display: inline-block;
+        float: left;
+    }
 }

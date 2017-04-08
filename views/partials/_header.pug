@@ -1,49 +1,45 @@
 header
-    div.navbar.navbar-fixed-top.navbar-inverse
+    div.container-fluid.navbar.navbar-fixed-top
         div.container
-            button.navbar-toggle(type="button" data-toggle="collapse" data-target=".navbar-collapse")
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-            a.navbar-brand(href="/")
-                img(src="images/logo.png" alt="Nemacolin, Inc.")
-                small.site-description est. 1946
-            nav.main-navigation.collapse.navbar-collapse
-                ul.menu.nav.navbar-nav.navbar-right
+            div.row
+                div.col-xs-12.col-sm-6
+                    a.navbar-brand(href="/")
+                        img(src="images/logo.png" alt="Nemacolin, Inc.")
+                        p.site-description est. 1946
+                div.col-xs-12.col-sm-6
+                    nav.main-navigation
+                        ul.menu.nav.navbar-nav
+                            if title === 'Nemacolin, Inc.'
+                                li.menu-item.current-menu-item.text-center
+                                    a(href="/") Home
+                            else
+                                li.menu-item.text-center
+                                    a(href="/") Home
 
-                    if title === 'Nemacolin, Inc.'
-                        li.menu-item.current-menu-item
-                            a(href="/") Home
-                    else
-                        li.menu-item
-                            a(href="/") Home
+                            if title === 'Customer Info'
+                                li.menu-item.current-menu-item.text-center
+                                    a(href="/customer") Customer Info
+                            else
+                                li.menu-item.text-center
+                                    a(href="/customer") Customer Info
 
-                    if title === 'Customer Info'        
-                        li.menu-item.current-menu-item
-                            a(href="/customer") Customer Info
-                    else
-                        li.menu-item
-                            a(href="/customer") Customer Info
+                            if title === 'Park'
+                                li.menu-item.current-menu-item.text-center
+                                    a(href="/park") Park
+                            else
+                                li.menu-item.text-center
+                                    a(href="/park") Park
 
-                    if title === 'Park'       
-                        li.menu-item.current-menu-item
-                            a(href="/park") Park 
-                    else
-                        li.menu-item
-                            a(href="/park") Park
+                            if title === 'FAQ'
+                                li.menu-item.current-menu-item.text-center
+                                    a(href="/faq") FAQ
+                            else
+                                li.menu-item.text-center
+                                    a(href="/faq") FAQ
 
-                    if title === 'FAQ'       
-                        li.menu-item.current-menu-item
-                            a(href="/faq") FAQ
-                    else
-                        li.menu-item
-                            a(href="/faq") FAQ
-
-                    if title === 'Contact'        
-                        li.menu-item.current-menu-item
-                            a(href="/contact") Contact
-                    else
-                        li.menu-item
-                            a(href="/contact") Contact
-        
+                            if title === 'Contact'
+                                li.menu-item.current-menu-item.text-center
+                                    a(href="/contact") Contact
+                            else
+                                li.menu-item.text-center
+                                    a(href="/contact") Contact
