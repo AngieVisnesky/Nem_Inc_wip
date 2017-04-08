@@ -10,7 +10,7 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 const nodemailer = require('nodemailer');
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -58,7 +58,7 @@ app.post('/send', function(req,res) {
     cc: 'angie.visnesky@gmail.com',
     subject: req.body.subject,
     text: 'This is a message from ' + req.body.name + ': ' + req.body.message
-  }
+  };
   transporter.sendMail(options, function(error, info) {
     if (error) {
         console.log(error);
@@ -66,7 +66,7 @@ app.post('/send', function(req,res) {
     } else {
         console.log('Message sent: ' + info.response);
         res.send('Message successfully sent!  We will be contacting you shortly.');
-    };
+    }
   });
 });
 
